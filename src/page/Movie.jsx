@@ -1,7 +1,6 @@
 import { data } from "../data/test";
 
 function Movie() {
-  data;
   return (
     <>
       {data.results.map((movie) => (
