@@ -37,9 +37,7 @@ function Home() {
   );
 }
 
-const Container = styled.div`
-  position: relative;
-`;
+const Container = styled.div``;
 const MoviePoster = styled.div`
   display: flex;
   align-items: center;
