@@ -11,9 +11,9 @@ function Header() {
             alt="로고"
           />
         </Link>
-        <Link to="/movie">서브1</Link>
-        <Link to="/movie">서브2</Link>
-        <Link to="/movie">서브3</Link>
+        <Link to="/movies/popular">인기순</Link>
+        <Link to="/movies/top_rated">별점순</Link>
+        <Link to="/movies/upcoming">개봉예정순</Link>
       </Cell>
     </Container>
   );
