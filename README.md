@@ -23,4 +23,7 @@ npm i react-router-dom
 
 # 스타일 컴포넌트
 npm i styled-components
+
+# 로딩 효과
+npm i react-loading-skeleton
 ```
