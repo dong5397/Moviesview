@@ -22,19 +22,21 @@ function Card({ movie }) {
           </SkeletonTheme>
         </Item>
       ) : (
-        <Item>
-          <Img
-            src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`}
-            alt="영화 포스트 사진"
-          />
-          <Overlay>
-            <Title>{movie.origin_title}</Title>
-            <SubTitle>
-              {movie.release_date} / ⭐️ {movie.vote_average}
-            </SubTitle>
-            <Description>{movie.overview}</Description>
-          </Overlay>
-        </Item>
+        <Link to={"/movie/" + movie.id}>
+          <Item>
+            <Img
+              src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`}
+              alt="영화 포스트 사진"
+            />
+            <Overlay>
+              <Title>{movie.origin_title}</Title>
+              <SubTitle>
+                {movie.release_date} / ⭐️ {movie.vote_average}
+              </SubTitle>
+              <Description>{movie.overview}</Description>
+            </Overlay>
+          </Item>
+        </Link>
       )}
     </Container>
   );
